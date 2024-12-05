@@ -7,13 +7,15 @@ body, html {
 }
 
 .birthdayimg {
-  background-image: url('https://cdn.pixabay.com/photo/2018/02/23/21/29/roses-frame-3176667_960_720.jpg');
+  background-image: url('https://i.pinimg.com/736x/7c/89/09/7c89099bdee27762e203b786a133b424.jpg');
   height: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
-  color: red;
-  font-size: 35px;
+  color: rgb(88, 80, 90);
+  text-shadow: 50px;
+  font-family: comic sans MS;
+  font-size: 15px;
 }
 
 .topleft {
@@ -25,9 +27,9 @@ body, html {
 
 .bottomleft {
   position: absolute;
-  color: red;
-  bottom:0;
-  left: 18px;
+  color: rgb(0, 0, 0);
+  bottom: 0px;
+  left: 1px;
 }
 
 .middle {
@@ -40,7 +42,7 @@ body, html {
 
 hr {
   margin: auto;
-  width: 40%;
+  width: 30%;
 }
 </style>
 
@@ -52,15 +54,15 @@ hr {
   <div class="middle">
     <h1>Ready for the Surprise ?</h1>
     <hr>
-    <p id="amx" style="font-size:80px"></p>
+    <p id="amx" style="font-size:40px"></p>
   </div>
   <div class="bottomleft">
-    <p>Created by AmX</p>
+    <p>Created by rushi1819</p>
   </div>
 </div>
 
 <script>
-var countDownDate = new Date("Dec 15, 2024 00:00:00").getTime();
+var countDownDate = new Date("Dec 15, 2024 :00").getTime();
 
 var countdownfunction = setInterval(function() {
 
@@ -72,12 +74,13 @@ var distance = countDownDate - now;
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("amx").innerHTML = days + hours + minutes + seconds;
+  document.getElementById("amx").innerHTML = days + "D " + hours + "H "
+  + minutes + "M " + seconds + "S ";
 
  if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("amx").innerHTML = "HAPPY BIRTHDAY SWEETY";
-    window.location = "https://www.youtube.com/c/coding4funn";
+    document.getElementById("amx").innerHTML = "HAPPY BIRTHDAY BALA...🎂🖤";
+    window.location = "https://piushi1819.github.io/surprise-/";
 }
 
 }, 1000);
